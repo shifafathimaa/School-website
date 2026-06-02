@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Admission – Azeeziya English Medium School</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/logo.png">
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a><span>›</span><a href="/admission-procedure">Admission</a><span>›</span><span>Online Admission</span></div>
+    <h2>Online Admission Form</h2>
+    <p>Academic Year 2025–26 | Apply in just 3 simple steps</p>
+  </div>
+</section>
+
+<section class="section-pad" style="background:var(--surface)">
+  <div class="container">
+    <div style="max-width:860px;margin:0 auto">
+
+      <!-- INFO BAR -->
+      <div style="background:var(--teal-pale);border:1px solid var(--teal);border-radius:var(--r);padding:16px 20px;margin-bottom:28px;display:flex;gap:12px;align-items:flex-start" class="fade-in">
+        <span style="font-size:1.3rem">ℹ️</span>
+        <div>
+          <strong style="color:var(--navy-dark)">Before you begin:</strong>
+          <span style="color:var(--text-mid);font-size:.88rem"> Please keep documents ready (Birth Certificate, previous school TC, Aadhaar). Fields marked with <span style="color:#e53e3e">*</span> are mandatory.</span>
+        </div>
+      </div>
+
+      <form id="admissionForm" novalidate>
+        <div class="form-container fade-in">
+
+          <!-- PROGRESS STEPS -->
+          <div class="form-progress">
+            <div class="progress-step active" data-step="0">
+              <span class="step-icon">👤</span>
+              <span>Student Details</span>
+            </div>
+            <div class="progress-step" data-step="1">
+              <span class="step-icon">👨‍👩‍👧</span>
+              <span>Guardian Details</span>
+            </div>
+            <div class="progress-step" data-step="2">
+              <span class="step-icon">📚</span>
+              <span>Academic Details</span>
+            </div>
+          </div>
+
+          <!-- STEP 1: STUDENT DETAILS -->
+          <div class="form-section active">
+            <h3 class="form-section-title">Student Details</h3>
+            <p class="form-section-subtitle">Please fill in the student's personal information accurately.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name <span>*</span></label>
+                <input type="text" name="studentName" class="form-control" placeholder="As per birth certificate" required>
+              </div>
+              <div class="form-group">
+                <label>Date of Birth <span>*</span></label>
+                <input type="date" name="dob" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="form-row three">
+              <div class="form-group">
+                <label>Gender <span>*</span></label>
+                <select name="gender" class="form-control" required>
+                  <option value="">Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Nationality <span>*</span></label>
+                <input type="text" name="nationality" class="form-control" placeholder="Indian" required>
+              </div>
+              <div class="form-group">
+                <label>Blood Group</label>
+                <select name="bloodGroup" class="form-control">
+                  <option value="">Select</option>
+                  <option>A+</option><option>A-</option>
+                  <option>B+</option><option>B-</option>
+                  <option>O+</option><option>O-</option>
+                  <option>AB+</option><option>AB-</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Religion</label>
+                <input type="text" name="religion" class="form-control" placeholder="Religion">
+              </div>
+              <div class="form-group">
+                <label>Class Applying For <span>*</span></label>
+                <select name="applyingClass" class="form-control" required>
+                  <option value="">Select class</option>
+                  <option>Nursery</option><option>LKG</option><option>UKG</option>
+                  <option>Class I</option><option>Class II</option><option>Class III</option>
+                  <option>Class IV</option><option>Class V</option><option>Class VI</option>
+                  <option>Class VII</option><option>Class VIII</option>
+                  <option>Class IX</option><option>Class X</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Previous School Name</label>
+                <input type="text" name="previousSchool" class="form-control" placeholder="Name of previous school">
+              </div>
+              <div class="form-group">
+                <label>Last Class Attended</label>
+                <input type="text" name="previousClass" class="form-control" placeholder="e.g., Class III">
+              </div>
+            </div>
+
+            <div class="form-row full">
+              <div class="form-group">
+                <label>Aadhaar Number (Student)</label>
+                <input type="text" name="studentAadhaar" class="form-control" placeholder="XXXX XXXX XXXX" maxlength="14">
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2: GUARDIAN DETAILS -->
+          <div class="form-section">
+            <h3 class="form-section-title">Guardian Details</h3>
+            <p class="form-section-subtitle">Please provide parent/guardian contact information.</p>
+
+            <div style="background:var(--surface);border-radius:var(--r);padding:20px;margin-bottom:20px;border:1px solid var(--border)">
+              <h4 style="font-weight:600;color:var(--navy-dark);margin-bottom:16px;font-size:.95rem">Father's Information</h4>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Father's Full Name <span>*</span></label>
+                  <input type="text" name="fatherName" class="form-control" placeholder="Father's name" required>
+                </div>
+                <div class="form-group">
+                  <label>Occupation</label>
+                  <input type="text" name="fatherOccupation" class="form-control" placeholder="e.g., Engineer, Teacher">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Mobile Number <span>*</span></label>
+                  <input type="tel" name="fatherPhone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" name="fatherEmail" class="form-control" placeholder="father@email.com">
+                </div>
+              </div>
+            </div>
+
+            <div style="background:var(--surface);border-radius:var(--r);padding:20px;margin-bottom:20px;border:1px solid var(--border)">
+              <h4 style="font-weight:600;color:var(--navy-dark);margin-bottom:16px;font-size:.95rem">Mother's Information</h4>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Mother's Full Name <span>*</span></label>
+                  <input type="text" name="motherName" class="form-control" placeholder="Mother's name" required>
+                </div>
+                <div class="form-group">
+                  <label>Occupation</label>
+                  <input type="text" name="motherOccupation" class="form-control" placeholder="e.g., Homemaker, Doctor">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Mother's Mobile Number</label>
+                <input type="tel" name="motherPhone" class="form-control" placeholder="+91 XXXXX XXXXX">
+              </div>
+            </div>
+
+            <div style="background:var(--surface);border-radius:var(--r);padding:20px;border:1px solid var(--border)">
+              <h4 style="font-weight:600;color:var(--navy-dark);margin-bottom:16px;font-size:.95rem">Home Address</h4>
+              <div class="form-row full">
+                <div class="form-group">
+                  <label>Full Address <span>*</span></label>
+                  <textarea name="address" class="form-control" rows="2" placeholder="House No., Street, Area" required></textarea>
+                </div>
+              </div>
+              <div class="form-row three">
+                <div class="form-group">
+                  <label>City / Town <span>*</span></label>
+                  <input type="text" name="city" class="form-control" placeholder="Kanhangad" required>
+                </div>
+                <div class="form-group">
+                  <label>State</label>
+                  <input type="text" name="state" class="form-control" placeholder="Kerala">
+                </div>
+                <div class="form-group">
+                  <label>PIN Code <span>*</span></label>
+                  <input type="text" name="pincode" class="form-control" placeholder="671316" maxlength="6" required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: ACADEMIC DETAILS -->
+          <div class="form-section">
+            <h3 class="form-section-title">Academic Details</h3>
+            <p class="form-section-subtitle">Please share the student's academic background and any special achievements.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Last Academic Year Percentage / Grade</label>
+                <input type="text" name="lastClassPercentage" class="form-control" placeholder="e.g., 85% / A+">
+              </div>
+              <div class="form-group">
+                <label>How did you hear about us? <span>*</span></label>
+                <select name="howDidYouHear" class="form-control" required>
+                  <option value="">Select</option>
+                  <option>Word of mouth / Friend/Family</option>
+                  <option>Google Search</option>
+                  <option>Social Media</option>
+                  <option>School Pamphlet / Brochure</option>
+                  <option>Newspaper Advertisement</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row full">
+              <div class="form-group">
+                <label>Co-Curricular Activities / Hobbies</label>
+                <textarea name="extraCurricular" class="form-control" rows="2" placeholder="e.g., Cricket, Drawing, Dance, Robotics Club..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-row full">
+              <div class="form-group">
+                <label>Notable Achievements / Awards</label>
+                <textarea name="achievements" class="form-control" rows="2" placeholder="e.g., District level chess champion, School topper..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-row full">
+              <div class="form-group">
+                <label>Any Medical Conditions / Special Needs</label>
+                <textarea name="medicalConditions" class="form-control" rows="2" placeholder="Please mention any allergies, disabilities, or medical conditions the school should be aware of. Write 'None' if not applicable."></textarea>
+              </div>
+            </div>
+
+            <div style="background:var(--teal-pale);border:1px solid var(--teal);border-radius:var(--r);padding:16px;margin-top:12px">
+              <label style="display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-size:.88rem;color:var(--text-mid)">
+                <input type="checkbox" name="declaration" required style="margin-top:3px;flex-shrink:0">
+                <span>I hereby declare that all the information provided in this form is true and correct to the best of my knowledge. I understand that any false information may result in cancellation of the admission. <span style="color:#e53e3e">*</span></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- FORM NAVIGATION -->
+          <div class="form-nav">
+            <button type="button" class="btn btn-outline btn-prev" style="visibility:hidden">← Previous</button>
+            <div style="font-size:.82rem;color:var(--text-light)" id="stepLabel">Step 1 of 3</div>
+            <button type="button" class="btn btn-green btn-next">Next Step →</button>
+          </div>
+
+          <!-- SUCCESS STATE -->
+          <div class="form-success">
+            <div class="success-icon">🎉</div>
+            <h3>Application Submitted Successfully!</h3>
+            <p>Thank you for applying to Azeeziya English Medium School. We have received your application and will review it carefully. Our admissions team will contact you within <strong>3–5 working days</strong>.</p>
+            <p style="font-size:.85rem;color:var(--text-light);margin-bottom:24px">Please keep a copy of this confirmation. For any queries, contact us at <strong>+91 8281 814 816</strong> or <strong>azeeziyaschoolhr@gmail.com</strong></p>
+            <a href="/" class="btn btn-green">Back to Home</a>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="/js/components.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
